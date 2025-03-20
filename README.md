@@ -1,2 +1,1 @@
-# Azure-infrastructure-using-Terraform
-Build, change, and destroy Azure infrastructure using Terraform.
+# Azure infrastructure using Terraform
