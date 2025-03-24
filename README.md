@@ -1,1 +1,0 @@
-# Azure infrastructure using Terraform
