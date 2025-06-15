@@ -1,55 +1,90 @@
 
-# Welcome to your Lovable project
+# Snake Game - Built with React & Vite
 
-## Project info
+This project is a classic Snake game implementation where the player controls a snake that grows by eating food while avoiding collisions with itself and the game boundaries. The objective is to achieve the highest possible score.
 
-**URL**: https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5
+**Core Technologies:**
+- **React:** A JavaScript library for building user interfaces.
+- **Vite:** A fast build tool and development server for modern web projects.
+- **TypeScript:** A typed superset of JavaScript that enhances code quality and maintainability.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **shadcn-ui:** A collection of re-usable UI components for a polished look and feel.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Classic Snake gameplay: Enjoy the timeless mechanics of the original Snake game.
+- Difficulty levels: Choose from various difficulty settings to match your skill level.
+- High score tracking: Compete with yourself and others to achieve the highest score.
+- Achievements: Unlock achievements for completing specific in-game milestones.
+- Power-ups: Discover and utilize power-ups that provide temporary advantages.
+- Theme and snake pattern customization: Personalize your gaming experience with different themes and snake patterns.
+- Mobile controls: Play on the go with intuitive touch controls for mobile devices.
 
-**Use Lovable**
+## How to Play
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5) and start prompting.
+**Objective:**
+The main goal of the game is to control the snake to eat food items that appear on the screen. Each piece of food consumed makes the snake grow longer. Players must avoid colliding with the game boundaries or the snake's own body. The longer the snake gets, the higher the score.
 
-Changes made via Lovable will be committed automatically to this repo.
+**Controls:**
+- **Desktop:** Use the **Arrow Keys** (Up, Down, Left, Right) or **WASD** keys to change the snake's direction.
+- **Mobile:** **Swipe** in the desired direction (Up, Down, Left, Right) on the screen to control the snake.
 
-**Use your preferred IDE**
+**Special Elements:**
+- **Power-ups:** Occasionally, special power-ups may appear. These can provide temporary advantages like slowing down the snake, making it invincible for a short period, or increasing the score multiplier. Keep an eye out for them!
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This section outlines how to get the project running on your local machine for development and testing purposes, along with alternative ways to edit the codebase.
 
-Follow these steps:
+### Local Development Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Follow these steps to set up the project locally:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1.  **Prerequisites:**
+    *   Ensure you have [Node.js](https://nodejs.org/) installed (LTS version recommended).
+    *   We recommend using [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating) to manage Node.js versions.
+    *   npm (Node Package Manager) is included with Node.js.
 
-# Step 3: Install the necessary dependencies.
-npm i
+2.  **Clone the Repository:**
+    ```sh
+    # Replace <YOUR_GIT_URL> with the actual Git URL of this repository.
+    git clone <YOUR_GIT_URL>
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+3.  **Navigate to Project Directory:**
+    ```sh
+    # Replace <YOUR_PROJECT_NAME> with the name of the directory created by cloning.
+    cd <YOUR_PROJECT_NAME>
+    ```
 
-**Edit a file directly in GitHub**
+4.  **Install Dependencies:**
+    ```sh
+    npm install
+    ```
 
-- Navigate to the desired file(s).
+5.  **Run the Development Server:**
+    ```sh
+    npm run dev
+    ```
+    The application should now be running, typically on `http://localhost:5173`.
+
+### Alternative Editing Methods
+
+**Using the Lovable IDE:**
+- Edit this project directly within the Lovable web IDE by visiting the [Lovable Project](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5).
+- Changes made via Lovable are automatically committed to this repository.
+
+**Editing directly in GitHub:**
+- Navigate to the desired file(s) in this repository.
 - Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Make your changes and commit them.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
+**Using GitHub Codespaces:**
+- Navigate to the main page of this repository.
+- Click on the "Code" button (green).
 - Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Click on "Create codespace on main" (or your current branch) to launch a new Codespace.
+- Edit files directly within the Codespace, then commit and push your changes.
 
 ## Docker Setup
 
@@ -91,10 +126,10 @@ docker-compose --profile prod up --build
 **Using Docker directly**
 ```sh
 # Build the image
-docker build -t pixel-python-challenge .
+docker build -t snake-game .
 
 # Run the container
-docker run -p 80:80 pixel-python-challenge
+docker run -p 80:80 snake-game
 
 # The app will be available at http://localhost:80
 ```
@@ -118,16 +153,6 @@ docker-compose build --no-cache
 docker-compose --profile [dev|prod|local] up
 ```
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 ## How can I deploy this project?
 
 **Deploy with Lovable**
@@ -144,10 +169,17 @@ The project includes Docker configuration for easy deployment to any Docker-comp
 
 3. **Cloud Platforms**: Deploy directly to platforms like Railway, Render, or DigitalOcean App Platform using the Dockerfile.
 
-## Can I connect a custom domain to my Lovable project?
+## Lovable Project Information
 
-Yes, you can!
+**Project URL:** [https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Custom Domain with Lovable
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Yes, you can connect a custom domain to your Lovable project!
+
+To connect a domain:
+1. Navigate to your project on Lovable.dev.
+2. Go to `Project > Settings > Domains`.
+3. Click `Connect Domain` and follow the on-screen instructions.
+
+For more details, see the guide on [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide).
