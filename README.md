@@ -70,10 +70,6 @@ Follow these steps to set up the project locally:
 
 ### Alternative Editing Methods
 
-**Using the Lovable IDE:**
-- Edit this project directly within the Lovable web IDE by visiting the [Lovable Project](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5).
-- Changes made via Lovable are automatically committed to this repository.
-
 **Editing directly in GitHub:**
 - Navigate to the desired file(s) in this repository.
 - Click the "Edit" button (pencil icon) at the top right of the file view.
@@ -155,10 +151,6 @@ docker-compose --profile [dev|prod|local] up
 
 ## How can I deploy this project?
 
-**Deploy with Lovable**
-
-Simply open [Lovable](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5) and click on Share -> Publish.
-
 **Deploy with Docker**
 
 The project includes Docker configuration for easy deployment to any Docker-compatible hosting service:
@@ -168,18 +160,3 @@ The project includes Docker configuration for easy deployment to any Docker-comp
 2. **Self-hosted**: Use the included docker-compose.yml file to deploy on your own server.
 
 3. **Cloud Platforms**: Deploy directly to platforms like Railway, Render, or DigitalOcean App Platform using the Dockerfile.
-
-## Lovable Project Information
-
-**Project URL:** [https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5](https://lovable.dev/projects/d5757522-b5e0-4a17-9bf1-f073765f46d5)
-
-### Custom Domain with Lovable
-
-Yes, you can connect a custom domain to your Lovable project!
-
-To connect a domain:
-1. Navigate to your project on Lovable.dev.
-2. Go to `Project > Settings > Domains`.
-3. Click `Connect Domain` and follow the on-screen instructions.
-
-For more details, see the guide on [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide).
