@@ -1,13 +1,6 @@
 # Snake Game
 
-This project is a modern implementation of the classic Snake game, where players control a snake that grows by eating food while avoiding collisions with itself and the game boundaries. The objective is to achieve the highest possible score.
-
-**Core Technologies:**
-- **React:** A JavaScript library for building dynamic user interfaces.
-- **Vite:** A fast build tool and development server optimized for modern web development.
-- **TypeScript:** A typed superset of JavaScript for improved code quality and maintainability.
-- **Tailwind CSS:** A utility-first CSS framework for rapid and responsive UI design.
-- **shadcn-ui:** A collection of reusable UI components for a polished and consistent look.
+Snake Game, a modern take on the classic arcade game! Control your snake as it slithers across the screen, eating food to grow longer and increase your score. But beware of colliding with the walls or your own tail, and it's game over! With multiple difficulty levels, achievements, and customizable themes, this version brings new life to the timeless gameplay.
 
 ## Features
 
@@ -21,36 +14,36 @@ This project is a modern implementation of the classic Snake game, where players
 
 ## How to Play
 
-**Objective:**  
+### Objective
 Guide the snake to eat food items that appear on the screen. Each piece of food makes the snake grow longer, increasing your score. Avoid crashing into the game boundaries or the snake’s own body to keep playing.
 
-**Controls:**  
-- **Desktop:** Use the **Arrow Keys** (Up, Down, Left, Right) or **WASD** keys to steer the snake.  
+### Controls
+- **Desktop:** Use the **Arrow Keys** (Up, Down, Left, Right) or **WASD** keys (W: Up, A: Left, S: Down, D: Right) to steer the snake.  
 - **Mobile:** **Swipe** in the desired direction (Up, Down, Left, Right) on the screen to control the snake.
 
-**Scoring:**  
+### Scoring
 - Eating food increases your score, with point values varying by difficulty level.  
 - Power-ups may grant bonus points or temporary score multipliers.
 
-**Special Elements:**  
+### Special Elements
 - **Power-ups:** Look out for occasional power-ups that provide advantages like slowing the snake, granting invincibility, or boosting your score. Use them wisely!
 
-**Tips for Beginners:**  
+### Tips for Beginners
 - Start with the easiest difficulty to master the controls and gameplay.  
 - Prioritize avoiding collisions over chasing food aggressively.  
 - Time power-up usage strategically for maximum benefit.
 
 ## Getting Started
 
-This section explains how to set up the project locally for development or testing and offers alternative methods for editing the codebase.
+This section explains how to set up the project locally or using Docker for development or testing.
 
 ### Local Development Setup
 
 Follow these steps to run the project on your machine:
 
 1. **Prerequisites:**  
-   - Install [Node.js](https://nodejs.org/) (LTS version recommended).  
-   - Use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating) to manage Node.js versions (optional but recommended).  
+   - Install [Node.js](https://nodejs.org/) (version 14 or higher; LTS recommended).  
+   - Optionally, use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating) to manage Node.js versions (recommended). Run `nvm install 14` and `nvm use 14` to set up the required version.  
    - npm (Node Package Manager) comes bundled with Node.js.
 
 2. **Clone the Repository:**  
@@ -72,53 +65,44 @@ Follow these steps to run the project on your machine:
    ```sh
    npm run dev
    ```  
-   The app will typically be available at `http://localhost:5173`.
+   The development server will start, and the app will be available at the URL shown in the console, typically `http://localhost:5173`.
 
-## Docker Setup
+### Docker Setup
 
 The project includes Docker configurations for both development and production environments.
 
-### Prerequisites
-
+#### Prerequisites
 - [Docker](https://docs.docker.com/get-docker/)  
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-### Development with Docker
-
-- **Option 1: Using docker-compose with Hot Reload**  
+#### Development Environment
+- **With Hot Reload:**  
   ```sh
-  # Start the development server with hot reload
   docker-compose --profile local up
-  # Access the app at http://localhost:5173
-  ```
+  ```  
+  Starts the development server with hot reload enabled. Access the app at `http://localhost:5173`.
 
-- **Option 2: Using Development Profile**  
+- **Standard Development:**  
   ```sh
-  # Build and start the development environment
   docker-compose --profile dev up --build
-  # Access the app at http://localhost:5173
-  ```
+  ```  
+  Builds and starts the development environment. Access the app at `http://localhost:5173`.
 
-### Production with Docker
-
-- **Using docker-compose**  
+#### Production Environment
+- **Using docker-compose:**  
   ```sh
-  # Build and start the production environment
   docker-compose --profile prod up --build
-  # Access the app at http://localhost:80
-  ```
+  ```  
+  Builds and starts the production environment. Access the app at `http://localhost:80`.
 
-- **Using Docker Directly**  
+- **Using Docker Directly:**  
   ```sh
-  # Build the image
   docker build -t snake-game .
-  # Run the container
   docker run -p 80:80 snake-game
-  # Access the app at http://localhost:80
-  ```
+  ```  
+  Builds the Docker image and runs the container. Access the app at `http://localhost:80`.
 
-### Useful Docker Commands
-
+#### Useful Docker Commands
 ```sh
 # Stop all services
 docker-compose down
@@ -135,3 +119,11 @@ docker-compose build --no-cache
 # Run a specific profile
 docker-compose --profile [dev|prod|local] up
 ```
+
+## Technologies Used
+
+- **React:** For building dynamic and interactive user interfaces.
+- **Vite:** A fast build tool and development server for modern web development.
+- **TypeScript:** For improved code quality and maintainability with static typing.
+- **Tailwind CSS:** For rapid and responsive UI design with utility-first classes.
+- **shadcn-ui:** For reusable UI components that ensure a polished and consistent look.
